@@ -51,6 +51,7 @@ INSTALLED_APPS = [
 
     # 추가한 앱
     'accountapp',
+    'bootstrap4',
 ]
 
 MIDDLEWARE = [
@@ -144,6 +145,6 @@ STATICFILES_DIRS = [
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# 로그인시 리다이렉트할 페이지
+# 로그인시 리다이렉트 할 페이지
 LOGIN_REDIRECT_URL = reverse_lazy('accountapp:hello_world')
 LOGOUT_REDIRECT_URL = reverse_lazy('accountapp:login')
