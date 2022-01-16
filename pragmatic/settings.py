@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     # 추가한 앱
     'accountapp',
     'bootstrap4',
+    'profileapp',
 ]
 
 MIDDLEWARE = [
