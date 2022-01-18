@@ -36,7 +36,7 @@ SECRET_KEY = env('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -54,6 +54,7 @@ INSTALLED_APPS = [
     'bootstrap4',
     'profileapp',
     'articleapp',
+    'commentapp',
 ]
 
 MIDDLEWARE = [
@@ -148,7 +149,7 @@ STATICFILES_DIRS = [
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # 로그인시 리다이렉트 할 페이지
-LOGIN_REDIRECT_URL = reverse_lazy('accountapp:hello_world')
+LOGIN_REDIRECT_URL = reverse_lazy('articleapp:list')
 LOGOUT_REDIRECT_URL = reverse_lazy('accountapp:login')
 
 
