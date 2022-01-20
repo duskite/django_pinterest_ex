@@ -21,13 +21,15 @@
 
             {% if target_article.writer == user %}
                 <a href="{% url 'articleapp:update' pk=target_article.pk %}"
-                   class="btn btn-primary rounded-pill col-3">
+                   class="btn btn-outline-primary rounded-pill col-3">
                     Update
                 </a>
+
                 <a href="{% url 'articleapp:delete' pk=target_article.pk %}"
-                   class="btn btn-danger rounded-pill col-3">
+                   class="btn btn-outline-danger rounded-pill col-3">
                     Delete
                 </a>
+
             {% endif %}
             <hr>
 

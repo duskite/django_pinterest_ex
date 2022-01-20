@@ -91,4 +91,5 @@ __pycache__/
 
 media/
 aws_pragmatic_key.pem
-Dockerfile
+nginx.conf
+docker-compose.yml
