@@ -2,7 +2,7 @@ FROM python:3.9.0
 
 WORKDIR /home/
 
-RUN echo "ttt"
+RUN echo "ttt1234"
 
 RUN git clone https://github.com/duskite/django_pinterest_ex.git
 
@@ -13,6 +13,8 @@ RUN pip install -r requirements.txt
 RUN pip install gunicorn
 
 RUN pip install mysqlclient
+
+
 
 EXPOSE 8000
 
