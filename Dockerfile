@@ -2,8 +2,7 @@ FROM python:3.9.0
 
 WORKDIR /home/
 
-RUN echo "1"
-RUN echo "test"
+RUN echo "t"
 
 RUN git clone https://github.com/duskite/django_pinterest_ex.git
 

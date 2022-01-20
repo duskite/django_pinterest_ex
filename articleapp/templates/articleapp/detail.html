@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load filter %}
 
 {% block content %}
 
@@ -16,7 +17,7 @@
                  src="{{ target_article.image.url }}" alt="">
 
             <div class="text-start">
-                {{ target_article.content | safe }}
+                {{ target_article.content | safe | mark }}
             </div>
 
             {% if target_article.writer == user %}
