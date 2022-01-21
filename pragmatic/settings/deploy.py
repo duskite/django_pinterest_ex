@@ -24,7 +24,7 @@ environ.Env.read_env(
 SECRET_KEY = read_secret('DJANGO_SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -42,6 +42,7 @@ DATABASES = {
     }
 }
 
+# 이부분 설정해야 https일때 403 오류 안남
 # Setup support for proxy headers
 USE_X_FORWARDED_HOST = True
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
