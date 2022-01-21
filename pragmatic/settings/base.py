@@ -130,3 +130,22 @@ LOGOUT_REDIRECT_URL = reverse_lazy('accountapp:login')
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
+
+CORS_ALLOW_CREDENTIALS = True
+
+CORS_ORIGIN_ALLOW_ALL = True
+
+CORS_ALLOW_CREDENTIALS = True
+
+
+CSRF_TRUSTED_ORIGINS = ['https://dgbb.shop']
+
+CORS_REPLACE_HTTPS_REFERER = True
+
+CSRF_COOKIE_DOMAIN = 'dgbb.shop'
+
+CORS_ORIGIN_WHITELIST = (
+    'https://dgbb.shop',
+    'dgbb.shop',
+)
+
