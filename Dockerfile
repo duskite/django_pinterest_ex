@@ -2,7 +2,7 @@ FROM python:3.9.0
 
 WORKDIR /home/
 
-RUN echo "aaaa1222222333"
+RUN echo "123"
 
 RUN git clone https://github.com/duskite/django_pinterest_ex.git
 
