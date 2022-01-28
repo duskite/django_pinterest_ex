@@ -93,3 +93,4 @@ media/
 aws_pragmatic_key.pem
 nginx.conf
 docker-compose.yml
+.DS_Store
