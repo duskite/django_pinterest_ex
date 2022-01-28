@@ -12,7 +12,7 @@ class ArticleCreationForm(ModelForm):
     project = forms.ModelChoiceField(queryset=Project.objects.all(), required=False)
 
     # 테스트 확인중인 부분
-    image = forms.FileInput(attrs={'accept' : 'image/*'})
+    upload = forms.ImageField(widget=forms.FileInput(attrs={'accept': 'image/*'}))
 
     class Meta:
         model = Article
