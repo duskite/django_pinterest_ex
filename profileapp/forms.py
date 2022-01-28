@@ -1,4 +1,5 @@
-from django.forms import ModelForm
+from django.forms import ModelForm, FileInput
+from django import forms
 
 from profileapp.models import Profile
 
